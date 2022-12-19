@@ -9,19 +9,19 @@ namespace SfFileService.FileManager.Base
 {
     public class FileManagerDirectoryContent
     {
-        public string Path { get; set; } = string.Empty;
+        public string Path { get; set; };
 
-        public string Action { get; set; } = string.Empty;
+        public string Action { get; set; };
 
-        public string NewName { get; set; } = string.Empty;
+        public string NewName { get; set; };
          
-		 public string[] Names { get; set; }
+	public string[] Names { get; set; }
 
-        public string Name { get; set; } = string.Empty;
+        public string Name { get; set; };
 
         public long Size { get; set; }
 
-        public string PreviousName { get; set; } = string.Empty;
+        public string PreviousName { get; set; };
 
         public DateTime DateModified { get; set; }
 
@@ -31,31 +31,25 @@ namespace SfFileService.FileManager.Base
 
         public bool IsFile { get; set; }
 
-        public string Type { get; set; } = string.Empty;
+        public string Type { get; set; };
 
-        public string Id { get; set; } = string.Empty;
+        public string Id { get; set; };
 
-        public string FilterPath { get; set; } = string.Empty;
+        public string FilterPath { get; set; };
 
-        public string FilterId { get; set; } = string.Empty;
+        public string FilterId { get; set; };
 		
-		public string ParentId { get; set; } = string.Empty;
+	public string ParentId { get; set; };
 
-        public string TargetPath { get; set; } = string.Empty;
+        public string TargetPath { get; set; };
 
         public string[] RenameFiles { get; set; }
 
-#if EJ2_DNX
-             public IList<System.Web.HttpPostedFileBase> UploadFiles { get; set; }
-#else
-
         public IList<IFormFile> UploadFiles { get; set; }
-#endif
 
         public bool CaseSensitive { get; set; }
 
-
-        public string SearchString { get; set; } = string.Empty;
+        public string SearchString { get; set; };
 
         public bool ShowHiddenItems { get; set; }
 
